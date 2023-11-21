@@ -9,4 +9,5 @@ const ctrlContainer = ctrl => {
     return func;
 }
 
+
 module.exports = ctrlContainer;
