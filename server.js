@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const DB_HOST = "mongodb+srv://vladyslav:12345678910@cluster0.be9jlmk.mongodb.net/contacts_reader?retryWrites=true&w=majority"
+const DB_HOST = "mongodb+srv://vladyslav:12345678910@cluster0.be9jlmk.mongodb.net/03-mongodb?retryWrites=true&w=majority"
 
 mongoose.set('strictQuery', true)
 
