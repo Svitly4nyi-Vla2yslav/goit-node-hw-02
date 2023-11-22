@@ -1,9 +1,9 @@
 const mongoose = require("mongoose")
-
-const DB_HOST = "mongodb+srv://vladyslav:12345678910@cluster0.be9jlmk.mongodb.net/03-mongodb?retryWrites=true&w=majority"
+const app = require('./app')
+const {DB_HOST} = process.env;
 
 mongoose.set('strictQuery', true)
-
+console.log(`Connecting to MongoDB at: ${DB_HOST}`);
 mongoose.connect(DB_HOST)
 .then(() => {
   app.listen(3000)
@@ -13,6 +13,6 @@ mongoose.connect(DB_HOST)
   process.exit(1)
 })
 
-const app = require('./app')
+
 
 
