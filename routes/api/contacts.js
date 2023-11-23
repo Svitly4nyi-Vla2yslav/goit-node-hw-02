@@ -20,5 +20,4 @@ router.put('/:id', isValidId, validateBody(schemas.addSchema), ctrl.update)
 
 router.patch('/:id/favorite', isValidId, validateBody(schemas.updateFavoriteSchema), ctrl.updateFavorite)
 
-
 module.exports = router;
