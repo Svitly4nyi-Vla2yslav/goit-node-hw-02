@@ -6,6 +6,7 @@ const remove = require("./remove")
 const update = require("./update")
 const updateFavorite = require("./updateFavorite")
 const register = require("./auth")
+const login = require("./auth")
 
 module.exports = {
     add: ctrlContainer(add),
@@ -15,4 +16,5 @@ module.exports = {
     update: ctrlContainer(update),
     updateFavorite: ctrlContainer(updateFavorite),
     register: ctrlContainer(register),
+    login: ctrlContainer(login),
 }
