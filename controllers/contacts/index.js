@@ -5,8 +5,8 @@ const getById = require("./getById")
 const remove = require("./remove")
 const update = require("./update")
 const updateFavorite = require("./updateFavorite")
-const register = require("./auth")
-const login = require("./auth")
+const register = require("./authRegister")
+const login = require("./authLogin")
 
 module.exports = {
     add: ctrlContainer(add),
