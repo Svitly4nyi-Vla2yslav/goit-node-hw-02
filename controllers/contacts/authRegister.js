@@ -2,7 +2,6 @@ const { HttpError } = require("../../helpers");
 const { User } = require("../../models/user")
 const bcrypt = require("bcrypt")
 
-
 const register = async (req, res) => {
     const { email, password } = req.body;
     const user = await User.findOne({ email })
@@ -16,7 +15,6 @@ const register = async (req, res) => {
     res.status(201).json({
         email: newUser.email,
         password: newUser.password,
-        // subscription: newUser.subscription,
     })
 };
 
