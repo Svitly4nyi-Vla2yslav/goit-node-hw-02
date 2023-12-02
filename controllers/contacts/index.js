@@ -7,6 +7,8 @@ const update = require("./update")
 const updateFavorite = require("./updateFavorite")
 const register = require("./authRegister")
 const login = require("./authLogin")
+const getCurrent = require("./authCurrent")
+const logout = require("./authLogout")
 
 module.exports = {
     add: ctrlContainer(add),
@@ -17,4 +19,6 @@ module.exports = {
     updateFavorite: ctrlContainer(updateFavorite),
     register: ctrlContainer(register),
     login: ctrlContainer(login),
+    getCurrent: ctrlContainer(getCurrent),
+    logout: ctrlContainer(logout),
 }
