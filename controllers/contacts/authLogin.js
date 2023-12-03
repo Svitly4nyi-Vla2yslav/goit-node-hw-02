@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt")
 const jwt = require("jsonwebtoken")
 
 const login = async (req, res) => {
-    const { email, password } = req.body;
+    const { email, password} = req.body;
     const user = await User.findOne({ email });
     if (!user) {
         throw HttpError(401, "Email or password is wrong")
@@ -20,6 +20,11 @@ const login = async (req, res) => {
     await User.findByIdAndUpdate(user._id, { token })
     res.json({
         token,
+        user: {
+            email,
+            subscription: user.subscription,
+        }
+
     })
 }
 

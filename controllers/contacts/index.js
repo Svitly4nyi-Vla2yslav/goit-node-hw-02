@@ -9,6 +9,8 @@ const register = require("./authRegister")
 const login = require("./authLogin")
 const getCurrent = require("./authCurrent")
 const logout = require("./authLogout")
+const updateSubscription = require("./authSubscription")
+
 
 module.exports = {
     add: ctrlContainer(add),
@@ -21,4 +23,5 @@ module.exports = {
     login: ctrlContainer(login),
     getCurrent: ctrlContainer(getCurrent),
     logout: ctrlContainer(logout),
+    updateSubscription: ctrlContainer(updateSubscription),
 }
