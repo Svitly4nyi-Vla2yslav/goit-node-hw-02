@@ -10,7 +10,7 @@ const login = require("./authLogin")
 const getCurrent = require("./authCurrent")
 const logout = require("./authLogout")
 const updateSubscription = require("./authSubscription")
-
+const updateAvatar = require("./authUpdateAvatar")
 
 module.exports = {
     add: ctrlContainer(add),
@@ -24,4 +24,5 @@ module.exports = {
     getCurrent: ctrlContainer(getCurrent),
     logout: ctrlContainer(logout),
     updateSubscription: ctrlContainer(updateSubscription),
+    updateAvatar: ctrlContainer(updateAvatar),
 }
