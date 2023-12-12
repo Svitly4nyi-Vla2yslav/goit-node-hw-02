@@ -11,6 +11,8 @@ const getCurrent = require("./authCurrent")
 const logout = require("./authLogout")
 const updateSubscription = require("./authSubscription")
 const updateAvatar = require("./authUpdateAvatar")
+const verifeEmail = require("./authVerifeEmail")
+const resendVerifyEmail = require("./authResendVerifyEmail")
 
 module.exports = {
     add: ctrlContainer(add),
@@ -25,4 +27,6 @@ module.exports = {
     logout: ctrlContainer(logout),
     updateSubscription: ctrlContainer(updateSubscription),
     updateAvatar: ctrlContainer(updateAvatar),
+    verifeEmail: ctrlContainer(verifeEmail),
+    resendVerifyEmail: ctrlContainer(resendVerifyEmail),
 }
