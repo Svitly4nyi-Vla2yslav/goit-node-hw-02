@@ -1,8 +1,9 @@
-const { HttpError, sendEmail } = require("../../helpers");
+const { HttpError } = require("../../helpers");
 const { User } = require("../../models/user")
 const bcrypt = require("bcrypt")
 const gravatar = require("gravatar")
-const { nanoid } = require("nanoid")
+const { nanoid } = require("nanoid");
+const { sendEmail } = require("../../services");
 const { BASE_URL } = process.env;
 
 const register = async (req, res) => {
