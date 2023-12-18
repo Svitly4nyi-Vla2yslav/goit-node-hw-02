@@ -9,7 +9,7 @@
     "lint:fix": "eslint --fix **/*.js"
   },
   "engines": {
-    "node": ">=14.20.1"
+    "node": ">=16.20.1"
   },
   "dependencies": {
     "@sendgrid/mail": "^8.1.0",
